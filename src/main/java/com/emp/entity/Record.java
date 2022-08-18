@@ -1,17 +1,17 @@
 package com.emp.entity;
 
 public class Record {
-	private Long cid;
+	private Long cId;
 	private String email;
 	private String companyName;
 	private Long eid;
 
 	public Long getCid() {
-		return cid;
+		return cId;
 	}
 
 	public void setCid(Long cid) {
-		this.cid = cid;
+		this.cId = cid;
 	}
 
 	public String getEmail() {
@@ -40,7 +40,7 @@ public class Record {
 
 	public Record(Long cid, String email, String companyName, Long eid) {
 		super();
-		this.cid = cid;
+		this.cId = cid;
 		this.email = email;
 		this.companyName = companyName;
 		this.eid = eid;

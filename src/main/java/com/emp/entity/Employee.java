@@ -4,26 +4,36 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Employee {
-	private int id;
+	private Long eId;
 	private String name;
 	private String phone;
 
 	public List<Record> records = new ArrayList<>();
 
-	public List<Record> getRecords() {
-		return records;
+
+	
+
+	public Employee(Long eId, String name, String phone) {
+		super();
+		this.eId = eId;
+		this.name = name;
+		this.phone = phone;
 	}
 
-	public void setRecords(List<Record> records) {
+	public Employee(Long eId, String name, String phone, List<Record> records) {
+		super();
+		this.eId = eId;
+		this.name = name;
+		this.phone = phone;
 		this.records = records;
 	}
 
-	public int getId() {
-		return id;
+	public Long geteId() {
+		return eId;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void seteId(Long eId) {
+		this.eId = eId;
 	}
 
 	public String getName() {
@@ -42,11 +52,11 @@ public class Employee {
 		this.phone = phone;
 	}
 
-	public Employee(int id, String name, String phone, List<Record> records) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.phone = phone;
+	public List<Record> getRecords() {
+		return records;
+	}
+
+	public void setRecords(List<Record> records) {
 		this.records = records;
 	}
 
@@ -54,4 +64,5 @@ public class Employee {
 		super();
 	}
 
+	
 }
